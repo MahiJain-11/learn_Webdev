@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SPECIFIITY</title>
+    <style>
+        /* h1{
+            color: aqua;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: blueviolet;
+        } */
+        *{
+            color: gray;
+        }
+        #title{
+            color: red;
+        }
+        .h1{
+            color: blue;
+        }
+        /* class selector k liye hum . krke likhte hai */
+        h1{
+            color: pink;
+        }
+        *{
+            color: gray;
+        }
+        h1{
+            color: tomato;
+        }
+
+        /* LAST MAI PINK LIKHA HAI TOH PINK COLOUR AJYEGA  FOR CSS SEPCIFICITY */
+        p {
+  color: green !important;
+}
+
+p {
+  color: blue;
+}
+    </style>
+</head>
+<body>
+    <h1 class="yellow cred cpurple"> CSS SPECIFICITY</h1>
+    <!-- order of  specificity  -->
+    <!-- 1) inline styles -->
+    <!-- <h1 id="title" class="h1" style="color:purple">CodeWithMahi</h1> -->
+    <!-- 2) ID SELECTOR -->
+    <h1 id="title" class="h1">CodeWithHarry</h1> 
+    <!-- yhan pr inline style nhi hai mtlb ki style krke kn likha iseliye id vla lg gya pr inline hota toh inline lgta  --> -->
+    <h1 id="title" class="h1" style="color: palegreen;">CodeWithHarry</h1> 
+    <!-- see yhan more priority is given to inline style -->
+    <!-- 3)Class and Attribute Selectors -->
+    <h1 class="h1">CodeWithHarry</h1>
+    <h1 class="h1" id="title" style="color: gold;">CodeWithHarry</h1>
+    <h1 class="h1" id="title">CodeWithHarry</h1>
+    <!-- 4)Element Selector Element selectors like <p>, <div>, <a>, etc. have low specificity. -->
+    <h1 class="h1">CodeWithHarry</h1>
+    <!-- 4) Universal Selector Universal selectors (*) and combining selectors like not, first-child, and last-child have the lowest specificity. -->
+
+    <!-- SPECIFICITY HEIRARCHY 
+    Inline Style > ID Selector > Class/Attribute/Pseudo-class > Element Selector > Universal Selector -->
+    
+    <!-- !important tag -->
+    <!-- when you add !important to a CSS rule, it will take precedence over other rules affecting the same element, regardless of their specificity. -->
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint molestiae quos, dignissimos libero itaque odio, quas soluta dicta deserunt ducimus, nisi esse aperiam vitae eos deleniti in minus. Illum, mollitia?</p>
+
+    </div>
+    
+</body>
+</html>
