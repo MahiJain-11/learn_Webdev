@@ -7,16 +7,50 @@
     .inline-demo {
       display: inline;
       background-color: lightblue;
-      padding: 5px;
+      padding: 3px;
+    }
+    .demo{
+      display: inline;
+      background-color: lightcoral;
+      padding: 3px;
+    }
+    .block-demo {
+      display: block;
+      background-color: lightgreen;
+      width: 150px;
+      height: 50px;
+      margin: 10px 0;
+    }
+    .inline-block-demo {
+      display: inline-block;
+      background-color: orange;
+      width: 100px;
+      height: 50px;
+      margin: 5px;
+      text-align: center;
+      line-height: 50px;
+    }
+     .hidden-demo {
+      display: none;
+    }
+    .invisible-demo {
+      visibility: hidden;
     }
   </style>
 </head>
 <body>
   <h2>Display Inline Example</h2>
   <p>
-    This is a 
-    <span class="inline-demo">CSS Inline</span> 
-    example inside a paragraph.
+  <div>
+    <span class="inline-demo">SELF BELIEF</span> is the quiet, unshakable confidence that you are capable of learning, adapting, and overcoming whatever challenges life places in your path. <span class="demo">far from arrogance</span> or blind optimism, true self-belief is a grounded trust in your own resilience, effort, and ability to grow. Every meaningful achievement begins with a single thought: the decision to trust yourself before anyone else does. 
+  <div class="inline-block-demo">Box 1</div>
+  <div class="inline-block-demo">Box 2</div>
+  <div class="inline-block-demo">Box 3</div>. On the other hand, when you cultivate genuine faith in your abilities, setbacks transform from <span class="block-demo">permanent roadblocks</span> into temporary lessons. You stop viewing mistakes as proof of inadequacy and start seeing them as stepping stones toward mastery. Self-belief gives you the courage to step outside your comfort zone, speak up for your ideas, and persist when progress feels slow or invisible. Over time, this inner conviction compounds—small daily efforts turn into real skills, and real skills reinforce your confidence, creating a powerful cycle of growth that turns once-impossible dreams into achievable realities.
+   <p class="hidden-demo">This text is hidden and removed from flow.</p>
+  <p>This is visible text.</p>
+  <p class="invisible-demo">This is invisible text (space remains).</p>
+  <p>This is also visible.</p>
+  </div>
   </p>
 </body>
 </html>
